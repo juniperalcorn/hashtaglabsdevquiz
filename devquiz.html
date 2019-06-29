@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HashTagLabsDevQuiz Juniper Alcorn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="devquiz.css">
+</head>
+<body>
+
+<h1>Part 2</h1>
+<h2>Question 1</h2>
+<div id="q1">
+    <div id="red">
+        <div id="green"></div>
+    </div>
+    <div id="blue"></div>   
+</div>
+
+<h2>Question 2</h2>
+<h3>a.</h3>
+<p>An analytics company might be concerned about browser caching because in order to accurately count the number of times a user visits a site, because caching will save the count and won't update it appropriately with a new visit or page refresh.</p>
+
+<h3>b. Prevent Browser Caching</h3>
+<p>I had to look this up, and based on a number of resources including StackOverflow, Medium, and a Google search, it seems it can be accomplished by adding tags (ETags and Cache control) to the HTML header.</p>
+<p>Those tags look like this: </p>
+<pre>
+    <code>
+        &lt;meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/&gt;
+        &lt;meta http-equiv="Pragma" content="no-cache"/&gt;
+        &lt;meta http-equiv="Expires" content="0"/&gt;
+    </code>
+</pre>
+
+<h3>c.</h3>
+<p>Some browsers will only load HTTPS, or secure pages. The solution here is to use a javascript tracking pixel, rather than an img tag--the img tag might reference non-secure assets and will be blocked by the client, but a javascript tag will still load if the overall page is secure.</p>
+
+<h3>d.</h3>
+<p>Companies can collect information using a tracking pixel:</p>
+<ul>
+    <li>IP address</li>
+    <li>Browser/email client used</li>
+    <li>Mobile or desktop</li>
+    <li>Operating System used</li>
+    <li>Time opened/accessed</li>
+</ul>
+
+<h3>e.</h3>
+<p>MORE information can be gathered using a javascrip &lt;script&gt; tag!</p>
+<ul>
+    <li>Screen resolution</li>
+    <li>Plugins or additional technologies utilized by browser</li>
+    <li>Can track user's activity on a page (what they click, when)</li>
+</ul>
+
+<h2>3.</h2>
+
+<img id="myimage" src="http://hashtag­analytics.com/myimage.jpg" alt='image!' width=”300” height=”250”/>
+
+<script src="devquiz.js"></script>
+</body>
+</html>
